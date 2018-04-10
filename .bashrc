@@ -87,10 +87,6 @@ fi
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-# some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -117,3 +113,22 @@ if ! shopt -oq posix; then
 fi
 
 stty -ixon
+
+# some more ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+# Git aliases
+alias ls='ls -aG'
+alias gca='git commit -a -m'
+alias gcm='git commit -m'
+alias gc='git commit'
+alias gco='git checkout'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gs='git status'
+# List aliases
+alias gla='git !git config -l | grep alias | cut -c 7-'
+alias ga='git add'
+alias g='git'
