@@ -2,11 +2,11 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/fboemer/.oh-my-zsh
+  export ZSH=/nfs/site/home/fboemer/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Them
+# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
 # Set list of themes to load
@@ -36,7 +36,7 @@ ZSH_THEME="robbyrussell"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -95,4 +95,18 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-# source /Users/fboemer/Documents/Intel/HELR/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# Git aliases
+alias gca='git commit --amend'
+alias gcm='git commit -m'
+alias gc='git commit'
+alias gco='git checkout'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gs='git status'
+alias gb='git branch'
+alias gla='git !git config -l | grep alias | cut -c 7-' # List aliases
+alias ga='git add'
+alias gpl='git pull'
+alias gps='git push'
+alias g='git'
+alias gl='git log'
