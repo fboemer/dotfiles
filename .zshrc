@@ -67,6 +67,10 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+# Remove autocorrect
+unsetopt correct_all
+unsetopt correct
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -110,3 +114,4 @@ alias gpl='git pull'
 alias gps='git push'
 alias g='git'
 alias gl='git log'
+
