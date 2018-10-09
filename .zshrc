@@ -36,7 +36,7 @@ ZSH_THEME="robbyrussell"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -108,7 +108,7 @@ alias gd='git diff'
 alias gdc='git diff --cached'
 alias gs='git status'
 alias gb='git branch'
-alias gla='git !git config -l | grep alias | cut -c 7-' # List aliases
+alias gla='git config -l | grep alias | cut -c 7-' # List aliases
 alias ga='git add'
 alias gpl='git pull'
 alias gps='git push'
