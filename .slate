@@ -27,3 +27,9 @@ bind pad7:ctrl ${topleft}
 bind pad8:ctrl ${top}
 bind pad9:ctrl ${topright}
 
+# keyboard
+bind return:ctrl ${full}
+bind ;:ctrl ${topleft}
+bind ':ctrl ${topright}
+bind .:ctrl ${bottomleft}
+bind /:ctrl ${bottomright}
