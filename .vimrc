@@ -1,5 +1,3 @@
-execute pathogen#infect()
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 " """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -125,22 +123,7 @@ autocmd FileType py,c,cpp,java,php autocmd BufWritePre <buffer> %s/\s\+$//e
 
 noremap <Leader>w :call TrimWhitespace()<CR>
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => NerdTree
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Close vim if the only window left open is a NERDTree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
-" autocmd VimEnter * NERDTree " Auto-load NERDTree on starting vim
-" autocmd VimEnter * wincmd p " Start NERDTree in vim portion
-
-" Toggle NERDTree with Ctrl+n
-map <C-n> :NERDTreeToggle<CR>
-
 
 " ,y for yanking, ,p for pasting
 vmap <silent> ,y "xy<CR>:wviminfo! ~/.viminfo
 nmap <silent> ,p :rviminfo! ~/.viminfo<CR>"xp
-
-
-

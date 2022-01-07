@@ -1,3 +1,0 @@
-[submodule "bundle/bundle/YouCompleteMe"]
-	path = bundle/bundle/YouCompleteMe
-	url = https://github.com/Valloric/YouCompleteMe.git
